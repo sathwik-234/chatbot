@@ -2,3 +2,4 @@ os
 time
 re
 google.generativeai
+dotenv
