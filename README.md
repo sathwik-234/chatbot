@@ -2,7 +2,7 @@
 
 TalentScout is an interactive, conversational AI chatbot designed to conduct initial technical screenings for job candidates. Built with Python, Streamlit, and Google's Gemini API, it moves beyond traditional forms and offers a seamless, engaging chat experience for the entire process, from gathering candidate information to asking personalized technical questions.
 
-![TalentScout Demo](https://i.imgur.com/gS8ZfE0.gif)
+![TalentScout Demo](https://www.loom.com/share/00abcdccae7a4944af1fc42ef33c4785?sid=9a2e74a7-9523-4a80-b208-ea49573ba6ce)
 *(A GIF demonstrating the app in action. A textual demo is provided below.)*
 
 ## 🌟 Key Features
