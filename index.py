@@ -4,11 +4,11 @@ import streamlit as st
 import os
 import time
 import re
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import google.generativeai as genai
 
-load_dotenv()
-GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
+# load_dotenv()
+GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY") 
 
 genai.configure(api_key=GEMINI_API_KEY)
 MODEL_NAME = "gemini-1.5-flash-latest"
