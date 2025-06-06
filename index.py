@@ -1,7 +1,7 @@
 # hiring_assistant_chatbot.py
 
 import streamlit as st
-import os
+# import os
 import time
 import re
 # from dotenv import load_dotenv
