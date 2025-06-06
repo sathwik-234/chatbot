@@ -68,6 +68,24 @@ pip install -r requirements.txt
 ```
 
 ### 5. Set Up Environment Variables
+This is the standard and most secure way to handle secrets in Streamlit apps, especially when deploying.
+
+Create a directory named `.streamlit` in your project's root folder.
+
+Inside this directory, create a file named `secrets.toml`.
+
+Add your API key to the `secrets.toml` file in the following format:
+
+`
+.streamlit/secrets.toml
+`
+
+```
+# Your Google Gemini API Key
+GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE"
+```
+
+or
 
 Create a file named `.env` in the root directory of your project. This file will securely store your API key.
 
