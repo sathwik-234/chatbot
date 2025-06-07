@@ -2,6 +2,7 @@
 
 TalentScout is an interactive, conversational AI chatbot designed to conduct initial technical screenings for job candidates. Built with Python, Streamlit, and Google's Gemini API, it moves beyond traditional forms and offers a seamless, engaging chat experience for the entire process, from gathering candidate information to asking personalized technical questions.
 
+![TalentScout Demo](https://www.loom.com/share/00abcdccae7a4944af1fc42ef33c4785?sid=9a2e74a7-9523-4a80-b208-ea49573ba6ce)
 
 ## 🌟 Key Features
 
@@ -18,6 +19,91 @@ TalentScout is an interactive, conversational AI chatbot designed to conduct ini
 -   **Framework**: Streamlit
 -   **AI Model**: Google Generative AI (Gemini 1.5 Flash)
 -   **Dependencies**: `google-generativeai`, `python-dotenv`
+
+## 🚀 Setup and Installation
+
+Follow these steps to get TalentScout running on your local machine.
+
+### 1. Prerequisites
+
+-   Python 3.8 or newer.
+-   A Google Gemini API key. You can obtain one from the [Google AI Studio](https://aistudio.google.com/app/apikey).
+
+### 2. Clone the Repository
+
+(Assuming you have the project in a Git repository)
+```bash
+git clone [https://github.com/your-username/talentscout-ai-chatbot.git](https://github.com/your-username/talentscout-ai-chatbot.git)
+cd talentscout-ai-chatbot
+```
+
+### 3. Create a Virtual Environment
+
+It's highly recommended to use a virtual environment to manage project dependencies.
+
+```bash
+# For Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 4. Install Dependencies
+
+Create a file named `requirements.txt` with the following content:
+
+**`requirements.txt`**
+```txt
+streamlit
+google-generativeai
+python-dotenv
+```
+
+Now, install these dependencies using pip:
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Set Up Environment Variables
+This is the standard and most secure way to handle secrets in Streamlit apps, especially when deploying.
+
+Create a directory named `.streamlit` in your project's root folder.
+
+Inside this directory, create a file named `secrets.toml`.
+
+Add your API key to the `secrets.toml` file in the following format:
+
+`
+.streamlit/secrets.toml
+`
+
+```
+# Your Google Gemini API Key
+GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE"
+```
+
+or
+
+Create a file named `.env` in the root directory of your project. This file will securely store your API key.
+
+**`.env`**
+```
+GEMINI_API_KEY="YOUR_GEMINI_API_KEY_HERE"
+```
+Replace `"YOUR_GEMINI_API_KEY_HERE"` with your actual Gemini API key.
+
+## ▶️ How to Run
+
+With your virtual environment activated and the `.env` file in place, run the following command in your terminal:
+
+```bash
+streamlit run hiring_assistant_chatbot.py
+```
+
+Your web browser should automatically open a new tab with the TalentScout application running.
 
 ## 📁 File Structure
 
