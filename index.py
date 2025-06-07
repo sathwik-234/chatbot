@@ -267,7 +267,7 @@ elif st.session_state.app_state == 'interview':
                         st.session_state.chat_history.append({"role": "assistant", "content": next_q_text_formatted})
                     st.rerun()
 
-# VIEW 3: COMPLETION
+#  COMPLETION
 
 elif st.session_state.app_state == 'completed':
     st.success("🎉 You've completed the technical screening. Thank you!")
@@ -293,7 +293,7 @@ elif st.session_state.app_state == 'completed':
             del st.session_state[key_to_del]
         st.rerun()
 
-# VIEW 4: CONVERSATION ENDED MANUALLY
+#  CONVERSATION ENDED MANUALLY
 elif st.session_state.app_state == 'ended':
     st.info("👋 The session was ended. Thank you for your time!")
     
